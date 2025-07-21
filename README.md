@@ -24,11 +24,12 @@ A modern web app to create, transfer, and view balances of fungible tokens on He
 📦 Prerequisites
 Node.js (v18+ recommended)
 
-Hedera Testnet Account: Create on portal
+Hedera Testnet Account: Create on hedera portal
 
 .env file with:
 
 HEDERA_ACCOUNT_ID=0.0.xxxxxxx
+
 HEDERA_PRIVATE_KEY=302e02...your-private-key
 
 🚀 Getting Started
@@ -36,15 +37,19 @@ HEDERA_PRIVATE_KEY=302e02...your-private-key
 1. Clone the Repo
 
 git clone https://github.com/your-username/hedera-token-vault.git
+
 cd hedera-token-vault
 
 2. Backend Setup
 
-Edit
 cd backend
+
 npm install
+
 # Create a .env file
+
 touch .env
+
 Paste your Hedera testnet credentials into .env:
 
 HEDERA_ACCOUNT_ID=0.0.xxxxx
@@ -53,21 +58,24 @@ HEDERA_PRIVATE_KEY=302e02...your-private-key
 Start the backend server:
 
 node index.js
+
 # Server running on http://localhost:8080
 
 3. Frontend Setup
 
 cd ../frontend
+
 npm install
+
 npm start
 # App running on http://localhost:3000
 
 🧠 How It Works
+
 Token Creation: Uses TokenCreateTransaction() with infinite supply
 
 Transfer: Uses TransferTransaction() to send tokens
 
 Balance Check: Queries account balances using AccountBalanceQuery
 
-📸 UI Preview
-Screenshots or GIFs can go here if needed.
+
