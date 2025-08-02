@@ -27,15 +27,16 @@ https://hedera-token-vault.netlify.app
 - @hashgraph/sdk
 
 📦 Prerequisites
+
 Node.js (v18+ recommended)
 
-Hedera Testnet Account: Create on hedera portal
+Hedera Testnet Account: 
 
-.env file with:
+Create on hedera portal .env file with:
 
-HEDERA_ACCOUNT_ID=0.0.xxxxxxx
+- HEDERA_ACCOUNT_ID=0.0.xxxxxxx
 
-HEDERA_PRIVATE_KEY=302e02...your-private-key
+- HEDERA_PRIVATE_KEY=302e02...your-private-key
 
 🚀 Getting Started
 
