@@ -42,7 +42,7 @@ Create on hedera portal .env file with:
 
 1. Clone the Repo
 
-git clone https://github.com/your-username/hedera-token-vault.git
+git clone https://github.com/ritika12df/Hedera-3.0-.git
 
 cd hedera-token-vault
 
