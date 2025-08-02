@@ -19,69 +19,63 @@ A modern web app to create, transfer, and view balances of fungible tokens on He
 https://hedera-token-vault.netlify.app
 
 
-🖥️ Tech Stack
+### 🖥️ Tech Stack
 
 - React
 - Node.js + Express
 - Hedera Hashgraph
 - @hashgraph/sdk
 
-📦 Prerequisites
+#### 📦 Prerequisites
 
 Node.js (v18+ recommended)
 
-Hedera Testnet Account: 
+#### Hedera Testnet Account: 
 
-Create on hedera portal .env file with:
+Create hedera testnet account and fill the in backend .env file with:
 
 - HEDERA_ACCOUNT_ID=0.0.xxxxxxx
 
 - HEDERA_PRIVATE_KEY=302e02...your-private-key
 
-🚀 Getting Started
+### 🚀 Getting Started
 
 1. Clone the Repo
-
+```bash
 git clone https://github.com/ritika12df/Hedera-3.0-.git
+cd Hedera-3.0-
+```
 
-cd hedera-token-vault
-
-2. Backend Setup
-
-cd backend
-
+2. Frontend Setup
+```bash
+cd frontend
 npm install
-
-# Create a .env file
-
-touch .env
-
-Paste your Hedera testnet credentials into .env:
-
-HEDERA_ACCOUNT_ID=0.0.xxxxx
-HEDERA_PRIVATE_KEY=302e02...your-private-key
-
-Start the backend server:
-
-node index.js
-
-# Server running on http://localhost:8080
-
-3. Frontend Setup
-
-cd ../frontend
-
-npm install
-
 npm start
-# App running on http://localhost:3000
+```
 
-🧠 How It Works
+3. Backend Setup
+```bash
+cd backend
+npm install
+node index.js
+```
 
-Token Creation: Uses TokenCreateTransaction() with infinite supply
+### 🧠 How It Works
 
-Transfer: Uses TransferTransaction() to send tokens
+- Token Creation: Uses TokenCreateTransaction() with infinite supply
 
-Balance Check: Queries account balances using AccountBalanceQuery
+- Transfer: Uses TransferTransaction() to send tokens
+
+- Balance Check: Queries account balances using AccountBalanceQuery
+
+#### 👥 Contributors
+
+Ritika Srivastava 
+
+#### Contributing
+
+Feel free to submit issues and pull requests to improve the project!
+
+
 
 
